@@ -1,0 +1,11 @@
+This file is used by the TestProxy unit test. It contains 2 diagrams description.
+
+@startuml
+actor User1 order 100 #blue
+actor User2 order 100 #green
+entity Streaming_Server
+collections CDN
+Streaming_Server -> CDN: .m3u8 .ts files
+CDN -> User1: .m3u8 .ts files
+CDN -> User2: .m3u8 .ts files
+@enduml
