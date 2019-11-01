@@ -4,8 +4,11 @@ This file is used by the TestProxy unit test. It contains 2 diagrams description
 actor User
 database Dht
 actor Peers
-User -> Dht : Target
-Dht -> User : M3U8 Style
+entity Streming Server
+Streaming Server -> Dht: List Of Fragments
+Streaming Server -> Dht: Torrents Files
+User -> Dht : Stream Hash
+Dht -> User : List Of Fragments
 User-> Dht : find torrents
 Peers -> User: Torrents
 @enduml
