@@ -5,8 +5,8 @@ actor User
 database Dht
 actor Peers
 entity Streming Server
-Streaming Server -> Dht: List Of Fragments
-Streaming Server -> Dht: Torrents Files
+"Streaming Server" -> Dht: List Of Fragments
+"Streaming Server" -> Dht: Torrents Files
 User -> Dht : Stream Hash
 Dht -> User : List Of Fragments
 User-> Dht : find torrents
