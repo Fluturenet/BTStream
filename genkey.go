@@ -13,7 +13,7 @@ func generateKey() {
 	kpair, _ := ed25519.GenerateKey(nil)
 	target := sha1.Sum(kpair.PublicKey())
 	filename := filepath.Join(dataDir, hex.EncodeToString(target[:])+".key")
-	fmt.Println("writing new key to : ",filename)
+	fmt.Println("writing new key to : ", filename)
 	file, err := os.Create(filename)
 	if err != nil {
 		fmt.Println(err)

@@ -1,7 +1,7 @@
 # BTStream
 Streaming Media over DHT Bittorrent Network
 
-The aim of this software is to create a uncensorable (video)content network. It's BackBone is the Bittorrent [DHT Network] and [Storing arbitrary data in the DHT] specifications.
+The aim of this software is to create a uncensorable (video)content network. It's BackBone is the Bittorrent [DHT Network] ~~~ and [Storing arbitrary data in the DHT] specifications~~~.
 
 ![uncached image](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://github.com/Fluturenet/BTStream/raw/master/doc/diagram1.txt)
 
@@ -20,7 +20,7 @@ With BTStream we are givin back the power to the users:
 > btstream
 
 
-> vlc http://localhost:8080/[hash of your favourite channel]
+> vlc http://localhost:8080/tr?ih=[hash of a torrent]
 
 [DHT Network]: http://bittorrent.org/beps/bep_0005.html
 [Storing arbitrary data in the DHT]: http://bittorrent.org/beps/bep_0044.html
